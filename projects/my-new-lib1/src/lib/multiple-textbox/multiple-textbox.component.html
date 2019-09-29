@@ -1,0 +1,41 @@
+<table>
+
+ <!-- Extract Text Boxes -->
+ <tr>
+    <td>
+      <input *ngIf="addMore" type="text"  [(ngModel)]="firstApiMining" (ngModelChange)="textChanged($event)">
+    </td>
+    <td>
+      <button type="button" class="btn btn-success" id = "addMore"  *ngIf="clickAgain" (click)="addOne(firstApiMining)" >
+        + </button>
+    </td>
+  </tr>
+
+  <tr *ngFor="let container of containers; let i = index;" [(ngModel)]="miningname" (ngModelChange)="textChangedMore($event,i)"
+    ngDefaultControl>
+    <ng-container>
+      <td>
+        <input *ngIf="addMore" type="text" >
+      </td>
+      <td>
+        <button type="button"  class="btn btn-success" id = "addOneMore"  (click)="addOneMore(miningname)"> + </button>
+      </td>
+      <td>
+        <button type="button" class="btn btn-danger" id = "deleteOneMore"  (click)="deleteOneMore(i)" > - </button>
+      </td>
+    </ng-container>
+  </tr>
+  <!-- <tr style = "width:100%"> 
+    
+      
+  </tr>  {{submitButton}}-->
+  <!-- Extract Check Boxes Ends -->
+
+</table>
+<br>
+<div>
+
+    <button type="button" class = "btn btn-info" id = "objectStyle"  (click)= "finalResponse();">{{submitButton}}
+</button>
+      
+</div>
