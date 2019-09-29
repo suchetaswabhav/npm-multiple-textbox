@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.6.
 
+The module integrates testboxes which can be added  or subtracted and this can be done randomly also.
+
 # How to include this module in my Application -
 
 **app.module.ts**
