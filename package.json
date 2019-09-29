@@ -7,9 +7,10 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepublish": "tsc"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~8.2.8",
     "@angular/common": "~8.2.8",
@@ -20,8 +21,10 @@
     "@angular/platform-browser-dynamic": "~8.2.8",
     "@angular/router": "~8.2.8",
     "bootstrap": "^4.3.1",
+    "es6-shim": "^0.35.5",
     "jquery": "^3.4.1",
     "npm": "^6.11.3",
+    "reflect-metadata": "^0.1.13",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
